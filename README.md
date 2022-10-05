@@ -10,10 +10,10 @@ Para o desenvolvimento do desafio, foi utilizado HTML, CSS e JavaScript e també
 
 
 <div align='center'>
-<h5>Versão Mobile<h5>
+<h2>Versão Mobile<h2>
 <img src="./images/mobile-daily.png">
 
 
-<h5>Versão Desktop<h5>
+<h2>Versão Desktop<h2>
 <img src="./images/desktop-weekly.png">
 
