@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --Blue: hsl(246, 80%, 60%);
+    --Light-orange: hsl(15, 100%, 70%);
+    --Soft-blue: hsl(195, 74%, 62%);
+    --Light-red: hsl(348, 100%, 68%);
+    --Lime-green: hsl(145, 58%, 55%);
+    --Violet: hsl(264, 64%, 52%);
+    --Soft-orange: hsl(43, 84%, 65%);
+    
+    --Very-dark-blue: hsl(226, 43%, 10%);
+    --Dark-blue: hsl(235, 46%, 20%);
+    --Desaturated-blue: hsl(235, 45%, 61%);
+    --Pale-Blue: hsl(236, 100%, 87%);
+    --White: white; 
+    --Black: black; 
+}
+body {
+    background-color: var(--Very-dark-blue);
+    font-family: 'Rubik', sans-serif;
+    color: var(--Pale-Blue);
+}
+.main-container {
+    /*border: 2px solid white;*/
+    width: 328px;
+    margin: 77px auto;
+    position: relative;
+}
+.first-section {
+    position: relative;
+}
+.main-card__user {
+    background-color: var(--Blue);
+    display: flex;
+    border-radius: 16px;
+    padding: 30px;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+.main-card__image {
+   width: 72px;
+   margin-right: 10px;
+   border: 3px solid var(--White);
+   border-radius: 50%;
+}
+.main-card__title {
+    font-size: 0.9em;
+    margin: 10px 0 4px;
+}
+.main-card__name {
+    font-size: 1.5em;
+    font-weight: 300;
+    color: var(--White);
+}
+.main-card__dates {
+    background-color: var(--Dark-blue);
+    border-radius:16px;
+    height: 100px;
+    font-size: 1.2em;
+    
+    display: flex;
+    justify-content: space-around;
+    padding-top: 52px;
+    width: 100%;
+    position: absolute; 
+    top: 105px; 
+   
+}
+.main-card__frequency:hover {
+    cursor:pointer;
+    color: var(--White);
+
+}
+.second-section {
+    padding-top: 220px;
+}
+.card {
+   position: relative; 
+   margin-bottom: 105px;
+   width: 100%;
+}
+.card__background {
+    background-color: var(--Light-orange);
+    height: 80px;
+    border-radius: 16px 16px 0 0;
+    overflow: hidden;
+}
+.card__image {
+    margin-top: -10px;
+    margin-left: 230px;
+}
+.card__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px;
+    bottom: -84px;
+
+    background-color: var(--Dark-blue);
+    border-radius: 16px;
+    height: 120px;
+    position: absolute;
+    width: 100%;
+}
+.card__details:hover {
+    cursor: pointer;
+    background-color: var(--Desaturated-blue);
+}
+.card__activity, .card__time  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card__title {
+    font-weight: 500;
+    font-size: 1,2em;
+    color: var(--White);
+}
+.card__hours {
+    font-weight: 300;
+    font-size: 2em;
+    color: var(--White);
+}
+.attribution { 
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media(min-width:1200px) {
+    .main-container {
+        width: 1150px;
+        display: flex;
+        margin: 120px auto;
+    }
+
+    .first-section {
+        padding-top: 24px;
+        width: 290px;
+        height: 564px;
+    }
+    .second-section {
+        width: 860px;
+        height: 564px;
+        padding-top: 0;
+        padding: 24px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .main-card__user {
+        height: 355px;
+        flex-direction: column;
+    }
+    .main-card__image {
+        width: 85px;
+        margin-bottom: 45px;
+    }
+    .main-card__title {
+        font-size: 1em;
+    }
+    .main-card__name {
+        font-size: 2.4em;
+    }
+    .main-card__dates {
+        margin-top: 250px;
+        height: 181px;
+        flex-direction: column;
+        padding: 40px 32px 18px;
+    }
+    .card {
+        width: 240px;
+        height: 244px;
+        margin-bottom: 25px;
+    }
+    .card__image {
+        margin-left: 140px;
+    }
+    .card__details {
+        height: 200px;
+        bottom: 0;
+    }
+    .card__time {
+        height: 300px;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 0;
+    }
+
+    .card__hours {
+        font-size: 2.5em;
+    }
+
+}
